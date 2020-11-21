@@ -1,2 +1,2 @@
-# hack_western_2020
+# Hack Western 2020
 
