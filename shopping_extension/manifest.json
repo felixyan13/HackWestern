@@ -1,0 +1,26 @@
+{
+    "name": "test",
+    "version": "1.0",
+    "description": "Build an Extension!",
+    "permissions": ["storage", "declarativeContent", "activeTab"],
+    "background":  {
+        "scripts": ["scripts/background.js"],
+        "persistent": false
+    },
+    "browser_action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+            "16": "images/icon.png",
+            "32": "images/icon.png",
+            "48": "images/icon.png",
+            "128": "images/icon.png"
+        }
+    },
+    "icons": {
+        "16": "images/icon.png",
+        "32": "images/icon.png",
+        "48": "images/icon.png",
+        "128": "images/icon.png"
+    },
+    "manifest_version": 2
+}
