@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .button {
+        height: 30px;
+        width: 70px;
+        background-color: #077BF0;
+        color: #ffffff;
+        border-radius: 4px;
+        margin-top: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="http://localhost:8080/getByCategory" method="GET">
+      <label>Local Shopping</label>
+      <select name="category">
+        <option value="restaurant">Restaurants</option>
+        <option value="entertainment">Entertainment</option>
+        <option value="fitness">Fitness</option>
+        <option value="retail">Retail</option>
+        <option value="other">Other</option>
+      </select>
+      <input id="submit" class="button" type="submit"/>
+    </form> 
+    <script src="scripts/popup.js"></script>
+  </body>
+</html>
