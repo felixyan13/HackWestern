@@ -27,25 +27,31 @@ class Popup extends React.Component {
   render() {
     return(
       <div className="popup">
-        Shopping Locally
-        {this.state.category}
+        <h1><b>Go Local</b></h1>
+        <div>
+          <select className="button" value={this.state.category} onChange={this.handleSelect}>
+            <option value="restaurant">Restaurants</option>
+            <option value="retail">Retail</option>
+            <option value="entertainment">Entertainment</option>
+            <option value="fitness">Fitness</option>
+          </select>
+          <button className="button" onClick={this.populateList}>Search</button>
+        </div>
 
-        <select value={this.state.category} onChange={this.handleSelect}>
-          <option value="restaurant">Restaurants</option>
-          <option value="retail">Retail</option>
-          <option value="entertainment">Entertainment</option>
-        </select>
-        <button onClick={this.populateList}>Search</button>
-        
-        {
-          this.state.data.map((item) => (<div>
-            <p>{item.storeName}</p>
-            <p>Location: {item.location}</p>
-            <p>Website:<a href={item.location}>{item.website}</a></p>
-            <p>Distance: {item.distance}</p>
-            <img className="shop-image" src={item.imageLink}/>
-          </div>))
-        }
+        <div className="shop-list">
+          {
+            this.state.data.map((item) => (
+              <div className="shop-card">
+                <img className="shop-image" src={item.imageLink}/>
+                <div className="shop-info">
+                  <h2><a className="shop-link" href={item.website} target='_blank'>{item.storeName}</a></h2>
+                  <h4 className="shop-info-text">Location: {item.location}</h4>
+                  <h4 className="shop-info-text">Distance: {item.distance}</h4>
+                </div>
+              </div>)
+            )
+          }
+        </div>
       </div>
     );
   }
