@@ -1,59 +1,54 @@
 .popup {
-  text-align: center;
-  width: 800px;
-}
-
-.popup-greet {
-  color: #80FFAB;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: 2em;
-  font-style: italic;
-  letter-spacing: 0.1em;
-  font-family: "Noto Sans", sans-serif;
-  margin-top: 2em;
-  padding: 0 0.8em 0.1em 0.8em;
+  text-align: center;
+  width: 400px;
+  background-color: #f5f4f4;
+  padding: 20px
 }
 
-.brand {
-  font-family: 'Roboto Mono', monospace;
-  letter-spacing: 0em;
-  font-style: normal;
-  font-weight: 600;
+.shop-list {
+  display: flex;
+  flex-direction: column;
 }
 
-.stack-head {
-  color: #ffffff;
-  font-family: 'Roboto Mono', monospace;
-  /* font-weight: 700; */
-  font-size: 2em;
+.button {
+  border: none;
+  background-color: white;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
 }
 
-.tech-logos {
-  padding: 0 2em 2em 2em;
-}
-
-.logo {
-  height: 40px;
-  padding-right: 1.8em;
-}
-
-.contrib-msg {
-  color: #ffffff;
-  font-family: 'Roboto Mono', monospace;
-  /* font-weight: 700; */
-  font-size: 1.5em;
-  margin: 2em 2em 3em 2em;
-}
-
-.contrib-msg a {
-  color: #0055ff;
-  font-weight: bold;
+.shop-card {
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  border-radius: 10px;
+  margin: 10px;
 }
 
 .shop-image {
-  width: 60px;
-  height: 50px;
+  width: 110px;
+  height: 100px;
+  border-radius: 10px 0px 0px 10px;
+}
+
+.shop-info {
+  text-align: left;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.shop-info-text {
+  margin: 0px;
+}
+
+.shop-link {
+  text-decoration: none;
+  color: black;
 }

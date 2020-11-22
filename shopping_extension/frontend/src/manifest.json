@@ -1,7 +1,7 @@
 {
   "version": "1.0",
   "manifest_version": 2,
-  "name": "Local Shopping Extension",
+  "name": "Go Local",
   "description": "Find local businesses near you.",
   "content_scripts": [
     {
