@@ -1,23 +1,41 @@
+
+
+
+
+
+
 <!DOCTYPE html>
 <html>
   <head>
     <style>
       button {
+        background-color: #4CAF50;
+        text-align: center;
+        color: white;
         height: 30px;
-        width: 30px;
+        width: 100px;
         outline: none;
+        border-radius: 12px;
       }
     </style>
+    <!--<input type ="image" src="/images/restauranticon.png"/>-->
   </head>
   <body>
     <p>Local Shopping</p>
+    <div class="container">
+      <img src="/images/restauranticon.png" alt="restaurants">
+      <button class="btn">Button</button>
+    </div>
+    <style>
+      
+    </style>
     <select>
-      <option>Restaurants</option>
+      <option><img src = "/images/restauranticon.png" width="10" height="10"> Restaurants</option>
       <option>Groceries</option>
       <option>Repair</option>
       <option>Other</option>
     </select>
     <button id="changeColor">Search</button>
-    <script src="scripts/popup.js"></script>
+    <script src="scripts/index.js"></script>
   </body>
 </html>
